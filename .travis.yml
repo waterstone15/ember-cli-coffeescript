@@ -29,7 +29,7 @@ env:
     - EMBER_TRY_SCENARIO=ember-beta
     - EMBER_TRY_SCENARIO=ember-canary
     - EMBER_TRY_SCENARIO=ember-default
-    - NODE_TESTS=true
+    - EMBER_TRY_SCENARIO=node-tests
 
 matrix:
   fast_finish: true
@@ -43,4 +43,4 @@ before_install:
 
 script:
   - npm run lint:js
-  - ./scripts/run-tests.sh
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO --skip-cleanup
