@@ -5,8 +5,6 @@ import config from './config/environment'
 
 App = null
 
-Ember.MODEL_FACTORY_INJECTIONS = true
-
 App = Ember.Application.extend
   modulePrefix: config.modulePrefix
   podModulePrefix: config.podModulePrefix

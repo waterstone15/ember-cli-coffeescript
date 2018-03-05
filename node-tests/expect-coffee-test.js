@@ -4,7 +4,7 @@ var expect = require('ember-cli-blueprint-test-helpers/chai').expect;
 var expectCoffee = require('./helpers/expect-coffee');
 
 describe('Unit: expect-coffee', function() {
-  it('throws on invalid coffee-script', function() {
+  it('throws on invalid coffeescript', function() {
     var testFunc = function() {
       expectCoffee({ content: 'var x = 1;' });
     }
@@ -12,7 +12,7 @@ describe('Unit: expect-coffee', function() {
     expect(testFunc).to.throw(Error);
   });
 
-  it('does not throw on valid coffee-script', function() {
+  it('does not throw on valid coffeescript', function() {
     var testFunc = function() {
       expectCoffee({ content: 'x = 1' });
     }

@@ -92,7 +92,6 @@ in the root of your project containing ignore-rules, one per line. This is just 
 ### Developing
 - `git clone` this repository
 - `npm install`
-- `bower install`
 - `npm link`
 
 Because of the nature of this project, it needs to be consumed by an ember-cli project to be properly developed.

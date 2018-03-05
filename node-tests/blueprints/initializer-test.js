@@ -32,7 +32,7 @@ describe('Acceptance: ember generate and destroy initializer', function() {
           .to.contain("import Ember from 'ember'")
           .to.contain("import { initialize } from 'my-app/initializers/foo-bar'")
           .to.contain("import { module, test } from 'qunit'")
-          .to.contain("module 'Unit | Initializer | foo bar'");
+          .to.contain("module 'Unit | Initializer | foo-bar'");
 
         expectCoffee(initializerTestFile);
     }));
